@@ -11,6 +11,14 @@ let io = new Server(server);
 
 app.use(express.static(path.join("./archivos")));
 
+app.use(express.text());
+
+app.get('/iniciar', (req,res) => {
+    
+    res.send('listo');
+    
+});
+
 io.on('connection', (socket) => {
 
     console.log('se conecto un tonto');

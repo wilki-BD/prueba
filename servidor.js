@@ -14,6 +14,13 @@ app.use(express.static(path.join("./archivos")));
 io.on('connection', (socket) => {
 
     console.log('se conecto un tonto');
+    
+    socket.on('mensaje', (datos) => {
+        
+        socket.emit('mensaje', datos);
+        
+    });
+    
 });
 
 

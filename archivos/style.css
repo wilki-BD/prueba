@@ -1,4 +1,33 @@
 body {
     background: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 99dvh;
 }
+
+
+
+#d {
+    
+    font-weight: bold;
+    color: #00b369;
+    background: #475e4e;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#envi {
+    
+    font-weight: bold;
+    color: #62e1eb;
+    background: #475e5e;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px #0050eb;
+    margin-top: 10px ;
+    
+}
+
